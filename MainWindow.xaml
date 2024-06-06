@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Carbuncle.v4.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Carbuncle.v4" Icon="icon.ico" Title="Carbuncle" Height="500" Width="599" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterOwner" Closing="Window_Closing">
+	<Grid>
+		<Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="484" Width="599" />
+		<TextBox Name="textbox_message" HorizontalAlignment="Left" Margin="10,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" Height="49" KeyDown="textbox_message_KeyDown" />
+		<Button Name="button_sendmsg" Content="Send" HorizontalAlignment="Left" Margin="336,394,0,0" VerticalAlignment="Top" Height="49" Width="73" Click="On_ClickSend" />
+		<RichTextBox Name="richtextbox" VerticalAlignment="Top" HorizontalAlignment="Left" MaxWidth="399" Margin="10,40,0,0" IsDocumentEnabled="True" Focusable="False" AllowDrop="False" IsTabStop="False" AcceptsReturn="False" IsUndoEnabled="False" IsReadOnly="True" Height="349" Width="399">
+			<FlowDocument>
+				<Paragraph Name="text_chat" />
+			</FlowDocument>
+		</RichTextBox>
+		<ListBox Name="list_users" VerticalAlignment="Center" HorizontalAlignment="Left" Width="175" Margin="414,0,0,0" Height="403" />
+		<Rectangle Name="image_header" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="579" Fill="#7FC8C8C8" />
+		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Carbuncle v4.0c" TextWrapping="NoWrap" VerticalAlignment="Top" Width="579" Height="25" TextAlignment="Left" LineStackingStrategy="MaxHeight" FontSize="18" FontWeight="Bold" Foreground="#CC323232">
+      <UIElement.Effect>
+        <BlurEffect />
+      </UIElement.Effect>
+		</TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Carbuncle v4.0c" TextWrapping="NoWrap" VerticalAlignment="Top" Width="579" Height="25" TextAlignment="Left" LineStackingStrategy="MaxHeight" FontSize="18" FontWeight="Bold" />
+		<Rectangle Name="image_footer" Margin="0,448,0,-4" Height="40" Fill="#FF646464" />
+		<Label Content="© 2022 Circle Prefect" HorizontalAlignment="Center" Margin="0,453,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA" FontWeight="Bold" />
+	</Grid>
+</Window>

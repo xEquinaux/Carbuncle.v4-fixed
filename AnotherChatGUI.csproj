@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Carbuncle.v4\HostPanel.cs" />
+    <Compile Remove="Carbuncle.v4\MainUI.cs" />
+    <Compile Remove="Carbuncle.v4\MainWindow.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="carbuncle header plain.png" />
+    <None Remove="Carbuncle.v4\icon.ico" />
+    <None Remove="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CirclePrefect">
+      <HintPath>..\Plando\CirclePrefect.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="carbuncle header plain.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
