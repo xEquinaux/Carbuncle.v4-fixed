@@ -19,7 +19,7 @@ public class App : System.Windows.Application
 	{
 		if (!Closing)
 		{
-			System.Windows.MessageBox.Show(e.Exception.ToString());
+			System.Windows.MessageBox.Show("Some error that was unresolved, idk.");
 		}
 		e.Handled = true;
 	}

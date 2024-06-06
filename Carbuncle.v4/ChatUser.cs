@@ -206,12 +206,16 @@ public class ChatUser
 	{
 		try
 		{
+			if (!IPAddress.TryParse(MainUI.Current.IP, out var addr))
+			{
+				addr = Dns.GetHostAddresses(MainUI.Current.IP)[0];
+			}
 			client = new TcpClient();
-			client.Connect(IPAddress.Parse(MainUI.Current.IP), 1010);
+			client.Connect(addr, 1010);
 		}
 		catch (Exception ex)
 		{
-			System.Windows.MessageBox.Show("Remote server is currently down. " + ex.Message, "Connection Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+			System.Windows.MessageBox.Show("Remote server is currently down.", "Connection Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
 			return false;
 		}
 		write = new StreamWriter(client.GetStream());

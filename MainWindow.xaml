@@ -11,12 +11,12 @@
 		</RichTextBox>
 		<ListBox Name="list_users" VerticalAlignment="Center" HorizontalAlignment="Left" Width="175" Margin="414,0,0,0" Height="403" />
 		<Rectangle Name="image_header" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="579" Fill="#7FC8C8C8" />
-		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Carbuncle v4.0c" TextWrapping="NoWrap" VerticalAlignment="Top" Width="579" Height="25" TextAlignment="Left" LineStackingStrategy="MaxHeight" FontSize="18" FontWeight="Bold" Foreground="#CC323232">
+		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Carbuncle v4.1c" TextWrapping="NoWrap" VerticalAlignment="Top" Width="579" Height="25" TextAlignment="Left" LineStackingStrategy="MaxHeight" FontSize="18" FontWeight="Bold" Foreground="#CC323232">
       <UIElement.Effect>
         <BlurEffect />
       </UIElement.Effect>
 		</TextBlock>
-		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Carbuncle v4.0c" TextWrapping="NoWrap" VerticalAlignment="Top" Width="579" Height="25" TextAlignment="Left" LineStackingStrategy="MaxHeight" FontSize="18" FontWeight="Bold" />
+		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Carbuncle v4.1c" TextWrapping="NoWrap" VerticalAlignment="Top" Width="579" Height="25" TextAlignment="Left" LineStackingStrategy="MaxHeight" FontSize="18" FontWeight="Bold" />
 		<Rectangle Name="image_footer" Margin="0,448,0,-4" Height="40" Fill="#FF646464" />
 		<Label Content="© 2022 Circle Prefect" HorizontalAlignment="Center" Margin="0,453,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA" FontWeight="Bold" />
 	</Grid>

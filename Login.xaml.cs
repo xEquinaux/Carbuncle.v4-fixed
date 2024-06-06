@@ -97,7 +97,7 @@ public partial class MainUI : Window, IComponentConnector
 		}
 		if (!IPAddress.TryParse(text, out var address))
 		{
-			return;
+			address = Dns.GetHostAddresses(text)[0];
 		}
 		try
 		{
@@ -150,7 +150,7 @@ public partial class MainUI : Window, IComponentConnector
 		}
 		catch (Exception ex)
 		{
-			System.Windows.MessageBox.Show("IP server is down or there is a connectivity problem. " + ex.Message, "Connection Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+			System.Windows.MessageBox.Show("IP server is down or there is a connectivity problem.", "Connection Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
 		}
 	}
 
